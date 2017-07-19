@@ -79,8 +79,4 @@ class TestsClass():
 
     def test_func_with_11(self):
     	actual = ClassToTest().func(11)
-        try:
-        	assert actual == 11
-        	logger.info('test_func_with11 PASSED')
-        except:
-        	logger.info('test_func_with11 FALED')
+        assert actual == 11
