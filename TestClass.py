@@ -1,9 +1,11 @@
 from TestSuite import ClassToTest
 
+
 class TestsClass():
+
     
     def test_func_with4(self):
-    	actual = ClassToTest().func(1)
+        actual = ClassToTest().func(1)
         assert actual == 2
 
     def test_func_with_5(self):
