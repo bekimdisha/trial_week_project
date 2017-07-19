@@ -1,21 +1,19 @@
 from TestSuite import ClassToTest
 import logging
-import sys
-sys.stdout.flush()
+
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
 
 
 class TestsClass():
 	logger = logging.getLogger(__name__)
-    
     # Simple test suite for a simple function
     def test_func_with1(self):
         actual = ClassToTest().func(1)
         try: 
-            assert actual == 2
-            logger.info('test_func_with1 PASSED')
+        	assert actual == 2
+        	logger.info('test_func_with1 PASSED')
         except:
-            logger.info('test_func_with1 FALED')
+        	logger.info('test_func_with1 FALED')
 
     def test_func_with_2(self):
     	actual = ClassToTest().func(2)
