@@ -7,7 +7,6 @@ class TestsClass():
     def test_func_with4(self):
         actual = ClassToTest().func(1)
         assert actual == 2
-        print 'test passed ' + str(actual == 2)
 
     def test_func_with_5(self):
     	actual = ClassToTest().func(2)
@@ -45,7 +44,3 @@ class TestsClass():
     def test_func_with_5(self):
     	actual = ClassToTest().func(9)
         assert actual == 10
-
-    def test_func_with_5(self):
-    	actual = ClassToTest().func(11)
-        assert actual == 11
