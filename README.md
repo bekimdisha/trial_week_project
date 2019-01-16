@@ -1,2 +1,2 @@
 # trial_week_project
-Weebly Trial Week Project repository
+Trial Week Project repository
